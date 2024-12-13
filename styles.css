@@ -1,0 +1,61 @@
+/* CSS for Evento Project */
+
+/* BASE STYLES */
+body {
+  font-family: Lato, Arial;
+  color: white;
+  background-image: url(https://images.unsplash.com/photo-1583795484071-3c453e3a7c71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=100);
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: darken;
+  background-position-y: -300px;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+/* HEADER */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1150px;
+  margin-left: auto;
+  margin-right: auto;
+  animation: fade-in 0.5s;
+}
+
+.logo {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.links {
+  list-style: none;
+  display: flex;
+}
+
+.link {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.75);
+  font-weight: 500;
+  font-size: 14px;
+  transition: all 0.3s;
+}
+
+.link:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.link-item {
+  margin-right: 25px;
+}
