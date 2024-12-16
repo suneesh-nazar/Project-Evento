@@ -59,3 +59,78 @@ body {
 .link-item {
   margin-right: 25px;
 }
+
+/* MAIN */
+
+.main {
+  text-align: center;
+  margin-top: 110px;
+  animation: fade-in 0.5s 0.1s backwards;
+}
+
+.heading {
+  font-size: 64px;
+  font-weight: 800;
+  margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 550px;
+  line-height: 0.9;
+}
+
+.text {
+  font-size: 24px;
+  height: 10px;
+  opacity: 0.8;
+}
+
+.text--bold {
+  font-weight: 700;
+}
+
+.form {
+  margin-top: 60px;
+}
+
+.input {
+  width: 511px;
+  height: 64px;
+  border: none;
+  padding: 0px;
+  border-radius: 3px;
+  opacity: 0.8;
+  padding-left: 30px;
+  font-size: 17px;
+  font: inherit;
+  outline: none; /* Not a good practice to remove it as it is part of accessibility So "Find Replacement" like increasing opacity on focus as it is done below */
+  transition: all 0.4s;
+}
+
+.input:focus {
+  opacity: 1;
+}
+
+.input::placeholder {
+  color: black;
+}
+
+.btn {
+  border: none;
+  padding: 23px 40px;
+  background-color: black;
+  color: white;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 3px;
+  margin-left: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.4s;
+  transition: all 0.4s;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: #161616;
+}
