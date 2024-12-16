@@ -8,6 +8,10 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
   background-blend-mode: darken;
   background-position-y: -300px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow-y: hidden;
 }
 
 @keyframes fade-in {
@@ -116,7 +120,7 @@ body {
 
 .btn {
   border: none;
-  padding: 23px 40px;
+  padding: 24px 40px;
   background-color: black;
   color: white;
   font: inherit;
@@ -128,9 +132,27 @@ body {
   letter-spacing: 1px;
   transition: 0.4s;
   transition: all 0.4s;
+  vertical-align: top;
 }
 
 .btn:hover {
   cursor: pointer;
   background-color: #161616;
+}
+
+/* FOOTER */
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1150px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: auto;
+  font-size: 12px;
+  padding: 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.5);
+  animation: fade-in 0.5s 0.2s backwards;
 }
